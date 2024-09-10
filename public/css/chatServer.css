@@ -1,0 +1,140 @@
+/* 设置全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+#choose {
+    padding: 10px;
+    background-color: #007BFF;
+    text-align: center;
+}
+
+#choose_chat {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#chat {
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat_top {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+}
+
+#chat_top img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.chat_message {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message_service, .message_custom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message_service .service_left, .message_custom .custom_right {
+    margin-right: 10px;
+}
+
+.message_service .service_right, .message_custom .custom_left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 75%;
+}
+
+.message_service .service_message_contain {
+    color: #333;
+}
+
+.message_custom .custom_message_contain {
+    color: #ffffff;
+    background-color: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message_time {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.service_head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#chat_tools {
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+#chat_tools img {
+    width: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#chat_input {
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    resize: none;
+}
+
+#send {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#send:hover {
+    background-color: #0056b3;
+}
+
+/* 添加滚动条样式 */
+.chat_message::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat_message::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 10px;
+}
